@@ -1,0 +1,36 @@
+
+
+{
+  "name": "mergeCall",
+  "version": "1.0.0",
+  "description": "Click To Call - mergeCall",
+   
+    "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png",
+    "64" : "c2c.jpeg"
+  },
+    "browser_action": {
+        "default_popup": "index.html"
+  },
+    
+  "background":{
+    "scripts": ["background.js"]
+  },
+    "permissions": ["tabs","storage", "<all_urls>", "webNavigation", "*://*/*"],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+            	"jquery.min.js",
+                "mergeCall.js",
+                "zillow.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+  "manifest_version": 2
+}

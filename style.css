@@ -1,0 +1,40 @@
+body {
+  width: 349px;
+  height: 255px;
+}
+
+span {
+  color: green;
+}
+
+#c2c_btn {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  border-radius: 100%;
+  right: 8%;
+  top: 4%;
+}
+img {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  border-radius: 100%;
+  right: -6%;
+  top: 4%;
+}
+
+/* .api_input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.hide {
+  display: none;
+}
+
+.hide_cls {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
